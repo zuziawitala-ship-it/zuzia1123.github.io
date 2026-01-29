@@ -3,7 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Kraje warte odwiedzenia</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS w środku pliku HTML -->
+  <style>
+    /* Ogólne style strony z tłem jako obraz */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+
+      /* tło jako obraz */
+      background-image: url('tlo.jpg'); /* wpisz tutaj swoją nazwę obrazka */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+
+    /* Nagłówki */
+    h1 {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+
+    /* Menu na stronie głównej */
+    .menu a {
+      display: block;
+      margin: 10px 0;
+      padding: 15px 25px;
+      width: 250px;
+      background: rgba(255, 182, 193, 0.8); /* różowe półprzezroczyste tło */
+      color: black;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: rgba(255, 140, 171, 0.8);
+    }
+  </style>
+
 </head>
 <body>
 

@@ -1,50 +1,76 @@
 
 Izabella
+/* Ogólne style strony */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #fef6f6;
+  background: #fff5f8; /* pastelowy róż */
+  margin: 0;
+  padding: 0;
 }
 
+/* Nagłówki */
 h1 {
   color: #ff6f91;
+  margin-top: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
+/* Menu na stronie głównej */
 .menu a {
   display: block;
   margin: 15px auto;
   padding: 15px;
   width: 250px;
-  background: #ffb6c1;
+  background: #ffb6c1; /* różowy */
   color: black;
   text-decoration: none;
   border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .menu a:hover {
   background: #ff8fab;
 }
 
+/* Listy z ciekawymi miejscami */
 ul {
   list-style: none;
   padding: 0;
 }
 
-li {
-  margin: 15px 0;
-  font-size: 18px;
+ul li {
+  background-color: #fff0f5; /* jasny pastelowy róż */
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
+/* Zdjęcia w liście */
+ul li img {
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Linki powrotu */
 a {
   text-decoration: none;
   color: white;
-  background-color: #ff6f91;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background-color: #ffb6c1;
+  padding: 12px 25px;
+  border-radius: 12px;
   display: inline-block;
   margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 a:hover {
-  background-color: #ff3f70;
+  background-color: #ff8fab;
 }

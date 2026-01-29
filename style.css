@@ -1,28 +1,40 @@
 
-Izabella
-/* Ogólne style strony */
+
+/* Ogólne style strony z tłem jako obraz */
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background:#dfffe0;
   margin: 0;
   padding: 0;
+
+  /* tło jako obraz */
+  background-image: url('tlo.jpg'); /* wpisz tutaj swoją nazwę obrazka */
+  background-size: cover;          /* obraz dopasowuje się do całej strony */
+  background-position: center;     /* wyśrodkowanie obrazu */
+  background-repeat: no-repeat;    /* nie powtarza obrazu */
+
+  height: 100vh;                   /* pełna wysokość strony */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;         /* pionowe wyśrodkowanie */
+  align-items: center;             /* poziome wyśrodkowanie */
+  color: white;                    /* biały tekst na tle */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* cień dla lepszej czytelności */
+  text-align: center;
 }
 
 /* Nagłówki */
 h1 {
-  color: #ff6f91;
-  margin-top: 40px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-size: 50px;
+  margin-bottom: 40px;
 }
 
 /* Menu na stronie głównej */
 .menu a {
   display: block;
-  margin: 15px auto;
-  padding: 15px;
+  margin: 10px 0;
+  padding: 15px 25px;
   width: 250px;
-  background: #ffb6c1; /* różowy */
+  background: rgba(255, 182, 193, 0.8); /* różowe półprzezroczyste tło */
   color: black;
   text-decoration: none;
   border-radius: 10px;
@@ -31,26 +43,26 @@ h1 {
 }
 
 .menu a:hover {
-  background: #ff8fab;
+  background-color: rgba(255, 140, 171, 0.8);
 }
 
-/* Listy z ciekawymi miejscami */
+/* Style podstron (ciekawe miejsca itp.) */
 ul {
   list-style: none;
   padding: 0;
 }
 
 ul li {
-  background-color: #fff0f5; /* jasny pastelowy róż */
+  background-color: rgba(255, 240, 245, 0.9); /* jasna karta */
   border-radius: 15px;
   padding: 15px;
   margin: 20px auto;
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
+  color: black;
 }
 
-/* Zdjęcia w liście */
 ul li img {
   border-radius: 10px;
   margin-top: 10px;
@@ -58,8 +70,8 @@ ul li img {
   height: auto;
 }
 
-/* Linki powrotu */
-a {
+/* Przyciski powrotu */
+a.back {
   text-decoration: none;
   color: white;
   background-color: #ffb6c1;
@@ -71,6 +83,6 @@ a {
   transition: background 0.3s;
 }
 
-a:hover {
+a.back:hover {
   background-color: #ff8fab;
 }
